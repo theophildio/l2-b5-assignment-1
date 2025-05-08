@@ -1,10 +1,10 @@
 # Interview Question 1: 
 
-**What is the use of the keyof keyword in TypeScript? Provide an example.**
+### What is the use of the keyof keyword in TypeScript? Provide an example.
 
 ✅  In TypeScript, keyof is used to get all the keys of an object as a type. It’s like saying, “Give me a list of the property names of this object.”
 
-### Example: 
+**Example:** 
 ```ts
 type Person = {
   name: string;
@@ -21,7 +21,7 @@ So if you use keyof Person, you're saying: "Give me a type that’s either 'name
 
 # Interview Question 2: 
 
-**How does TypeScript help in improving code quality and project maintainability?**
+### How does TypeScript help in improving code quality and project maintainability?
 
 ✅  TypeScript makes your code better and easier to manage by adding types. It helps catch mistakes while you're writing code, not after you run it. This means fewer bugs and less time spent fixing issues later.
 
