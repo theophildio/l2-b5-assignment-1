@@ -50,5 +50,22 @@ function filterByRating(items: { title: string; rating: number }[]): { title: st
   }
   
   
+  interface Product {
+    name: string;
+    price: number;
+  }
+  
+  function getMostExpensiveProduct(products: Product[]): Product | null {
+    if (products.length === 0) {
+      return null;
+    }
+  
+    return products.reduce((max, product) => 
+      product.price > max.price ? product : max
+    );
+  }
+  
+ 
+  
   
   
