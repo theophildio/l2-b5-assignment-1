@@ -14,6 +14,8 @@ type Person = {
 type PersonKeys = keyof Person;
 // PersonKeys will be: "name" | "age"
 
+```
+
 So if you use keyof Person, you're saying: "Give me a type that’s either 'name' or 'age'." It’s helpful when you want to make your code more flexible and safe, especially when working with objects.
 
 
